@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" refer></script>
+</head>
+<body>
+<form>
+    <input type="text" id="'name" placeholder="Name"/>
+    <input type="number" id="quant" step="0.1" placeholder="Quantity"/>
+    <button type="submit">Display</button>
+    <script>
+        document.querySelector('form').addEventListener('submit', (e))=>{
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const quant = Number(document.getElementById('quant').value);
+
+            if (Number.isInteger(quant)) {
+                const h1 = document.createElement('h1');
+                h1.textContent = name.repeat(quant);
+                document.body.append(h1);
+            } else {
+                alert('Nomber is not an integer');
+            }
+        
+        }
+    </script>
+</form
+</body>
+</html>

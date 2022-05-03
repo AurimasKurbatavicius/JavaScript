@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="./praktika.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="register-form" action="https://reqres.in/api/register" method="POST">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="eve.holt@reqres.in" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" value="pistol" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      
+      <p id="output">
+      </p>
+      
+      <form>
+  <input id="brand" type="text" placeholder="Enter car brand">
+  <input id="model" type="text" placeholder="Enter model">
+	<input id="mileage" type="text" placeholder="Enter mileage">
+	<input id="price" type="text" placeholder="Enter price">
+	<input id="image" type="text" placeholder="Enter image URL">
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<div class="wrapper"></div>
+</body>
+</html>

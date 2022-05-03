@@ -1,0 +1,105 @@
+// Boolean
+const name = 'CodeAcademy';
+const boolean = true;
+console.log(boolean.toString());
+// Number
+const number = 5;
+// console.log(number.toString());  -  skaiciu(domenu tipa) pakeicia i stringa
+console.log(number.toString(2));  - pavercia i dvejataini koda (bainer)
+// console.log(number.toFixed());  -  suapvalina i sveika skaiciu
+// console.log(number.toFixed(5));  -  rodo skaicius po kabliuko
+// console.log(number.valueOf());
+// console.log(number.toPrecision(3));
+// console.log(number.toExponential(1));
+// String
+let string = 'CodeAcademy';
+console.log(string.charAt(1)); galim pasirinkti raide pagal indexa
+
+// console.log(string.charAt(string.length - 1));
+// console.log(string.charAt(2));
+// console.log(string[2]);
+
+console.log(string.concat('As esu', 'Vidmantas')); gaali prideti stringus prie stringu (sujungti stringus "visus"))
+// console.log(string + ' Lietuva' + ' Vilnius' + 5); tas pats
+
+// console.log(string.concat(' Lietuva', ' Vilnius', 'asfasgas'));
+// console.log(string + ' Lietuva' + ' Vilnius' + 5);
+// console.log(string.endsWith('Academy'));
+// if (string.endsWith('Academy')) {
+// 	alert('Baigiasi su Academy');
+// }
+// console.log(string.startsWith('C'));
+// let email = 'vidmantas@gmail.com';
+// console.log(string.includes('demy'));
+// console.log(email.includes('@'));
+// if (!email.includes('@') || !email.includes('.com')) {
+// 	alert('Blogas email');
+// }
+console.log(string.indexOf('A'));
+console.log(string.indexOf('X'));
+if (string.indexOf('cademy', 5) > -1) {
+	console.log('egzistuoja');
+}
+// console.log(string.charAt(string.indexOf('A')));
+
+// console.log(string.length);  -  grazina reiskinio ilgi
+
+// console.log(string.repeat(4));  - palkartoja kiek irasysi
+
+// console.log(string.replace('Code', 'Test'));  
+// console.log(string.replace(' ', '-')); viena tarpa pakeicia i ka pasirenki
+console.log(string.replaceAll(' ', '-')); visus pakeicia
+
+// console.log(string.search('Academy'));
+// console.log(string.toLowerCase());  viskas is mazosios raides
+// console.log(string.toUpperCase());  viskas is didziosios raides
+
+
+// let string = '        CodeAcademy    ';
+console.log(string.trimEnd());  pasalyna tarpus gale
+console.log(string.trimStart()); pasalyna tarpus prieki
+console.log(string.trim()); ir ten ir ten
+
+// slice
+// console.log(string.slice(0, 4));nuo -- iki
+// console.log(string.slice(4)); nuo
+console.log(string.slice(-1)); paskutine duotu raude
+
+// console.log(string.slice(0, -2));
+// console.log(string.slice(6, 4)); // pirmas indeksas turi buti anksciau uz antra
+// console.log(string.slice(4, 6));
+
+
+console.log(string.substring(6, 4)); // veikia panasiai kaip slice.
+
+
+// split
+// console.log(string.split('')); - pagal raide issplitina
+// console.log(string.split('a')); pagal psirinkta raide
+
+// split
+// console.log(string.split(''));
+// console.log(string.split('a'));
+const string3 = 'Code Academy Vilnius ';   padalinam i dalis 
+console.log(string3.split(' '));
+
+
+
+// console.log(string.split('a'));
+const string3 = 'Code Academy Vilnius';
+// console.log(string3.split(' '));
+console.log(string3.split(' ').join('/'));
+console.log(string3.replaceAll(' ', '/'));
+
+
+
+
+const string4 = 'aNTANAS';
+string4.charAt(0).toUpperCase() + string4.slice(1).toLowerCase(); -  padarom pirma raide did ir visas maz
+
+
+
+const string4 = 'aNTANAS';
+const correctName =
+	string4.charAt(0).toUpperCase() + string4.slice(1).toLowerCase();
+padarius funkcija ir isvedus i ekrana galima pritaikyt viems vardams nir t.t.
